@@ -1,4 +1,3 @@
-Here is a complete, easy-to-use `README.md` for your **AutoMap** project. I have structured it to be professional and ready for GitHub, including all the technical details from your files.
 
 '''
 
@@ -6,6 +5,11 @@ Here is a complete, easy-to-use `README.md` for your **AutoMap** project. I have
 
 **AutoMap** is a CLI-first AI security analyst designed for authorized local network scans. It combines the power of traditional networking tools with local LLMs (via Ollama) to provide readable, actionable defensive analysis.
 
+```
+××××××××××××××××××××××
+[{BY]}> Dhruv-Creator-De-Pal
+××××××××××××××××××××××
+```
 ## ✨ Key Features
 
 * **Live Device Discovery**
@@ -82,3 +86,4 @@ Every scan generates a `automap-report.md` by default. This includes:
 ## ⚖️ Security Warning
 
 **AutoMap is for defensive and educational purposes only.** Use this tool only on networks where you have explicit authorization. Unauthorized scanning can be illegal and disruptive.
+'''
