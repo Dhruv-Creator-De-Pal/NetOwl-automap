@@ -136,7 +136,7 @@ def scan(
         report_data["ai_analysis"] = {}
 
     report.write_text(render_report(report_data), encoding="utf-8")
-    console.print(f"[bold green]Report saved:[/bold green] {report}")
+    console.print(f"[bold green]Report saved to root of the Project:[/bold green] {report}")
         
 
 
