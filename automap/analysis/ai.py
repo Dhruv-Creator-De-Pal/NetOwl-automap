@@ -97,7 +97,7 @@ def normalize_ollama_host(host: str) -> str:
 def analyze_scan(report_data: dict, host: str, model: str) -> str:
     prompt = build_scan_prompt(report_data)
     ollama_host = normalize_ollama_host(host)
-    client = Client(host=ollama_host, timeout=120)
+    client = Client(host=ollama_host, timeout=240)
 
     response = client.chat(
         model=model,
