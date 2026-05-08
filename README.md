@@ -82,8 +82,3 @@ Every scan generates a `automap-report.md` by default. This includes:
 ## ⚖️ Security Warning
 
 **AutoMap is for defensive and educational purposes only.** Use this tool only on networks where you have explicit authorization. Unauthorized scanning can be illegal and disruptive.
-```
-## 📜 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](https://www.google.com/search?q=LICENSE) file for details.
-```
