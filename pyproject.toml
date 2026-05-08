@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "automap"
+version = "0.1.0"
+description = "CLI-first AI security analyst for authorized local networks"
+requires-python = ">=3.10"
+dependencies = [
+    "typer",
+    "rich",
+    "scapy",
+    "ollama"
+]
+
+[project.scripts]
+automap = "automap.cli.main:app"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["automap*"]
