@@ -80,3 +80,7 @@ Every scan generates a `automap-report.md` by default. This includes:
 
 **AutoMap is for defensive and educational purposes only.** Use this tool only on networks where you have explicit authorization. Unauthorized scanning can be illegal and disruptive.
 '''
+### Contributions are Welcomed 
+```
+For any chnages please open the issue first
+```
