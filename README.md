@@ -42,18 +42,11 @@ sudo ./install.sh
 
 ## 🛠️ Usage
 
-### 1. Basic Quick Scan
-
-Perform a fast scan on common ports across a range:
-```
-sudo automap scan 192.168.1.0/24 --mode quick
-```
-
-### 2. Full AI Analysis
+### Full AI Analysis
 
 Connect to your local Ollama instance for a detailed security breakdown:
 ```
-sudo automap scan 10.0.0.0/24 --ai-host http://localhost:11434 --ai-model llama3
+sudo automap scan 10.0.0.0/24 --mode quick --ai-host http://localhost:11434 --ai-model llama3
 ```
 ```
 ### 3. Scan Modes
