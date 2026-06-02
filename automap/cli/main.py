@@ -36,7 +36,7 @@ if os.getuid() !=0:
 @app.callback()
 def main():
     # AutoMap command line interface entry point.
-    console.print("[dim]Powered By Pharosys[/dim]")
+    pass
 
 
 class ScanMode(str, Enum):
