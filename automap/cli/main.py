@@ -60,6 +60,7 @@ def scan(
 ):
     # Discovers devices in a target range, scans ports, then runs AI analysis.
     console.print("[bold cyan]AutoMap Scan Started[/bold cyan]")
+    console.print("[dim]Powered By Pharosys[/dim]")
     console.print(f"IP: [bold cyan]{target}[/bold cyan]")
     console.print(f"Mode: [bold magenta]{mode.value}[/bold magenta]")
     if ai and ai_model and ai_host:
