@@ -65,11 +65,17 @@ sudo automap scan 10.0.0.0/24 --mode quick --ai-host http://localhost:11434 --ai
 ```
 ### 4. Custom Report Path
 
-Save your report to a specific location:
+One shot command to runn From Cloneing to Running the scan 
 ```
-sudo automap scan 192.168.1.1 --report my-network-security.md
-```
+# 1. Clone the repository
+git clone https://github.com/Dhruv-Creator-De-Pal/NetOwl-automap.git
 
+# 2. Enter the directory
+cd NetOwl-automap
+
+# 3. Install dependencies and run the first scan
+sudo pip install -e . && sudo automap scan 192.168.1.0/24 --ai-host http://ollama.pharosys.tech:9090 --ai-model llama3
+```
 ---
 
 ## 📊 Reporting
