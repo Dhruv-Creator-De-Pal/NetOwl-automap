@@ -1,0 +1,41 @@
+name: NetOwl CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.11"
+        cache: 'pip'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        # Install testing and linting tools
+        pip install flake8 pytest
+        # Install project requirements if they exist
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+    - name: Lint with flake8 (Anti-Slop Check)
+      run: |
+        # This will immediately fail the PR if there are syntax errors or undefined names (common AI hallucinations)
+        flake8 automap --count --select=E9,F63,F7,F82 --show-source --statistics
+        # This checks for basic formatting and complexity
+        flake8 automap --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+
+    - name: Run Tests
+      run: |
+        # Runs any tests you have in your repository to ensure they didn't break core features
+        pytest
