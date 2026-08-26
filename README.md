@@ -97,3 +97,7 @@ Every scan generates a `automap-report.md` by default. This includes:
 ```
 For any chnages please open the issue first
 ```
+
+## 📄 License
+
+This project is licensed under the MIT License. See `/home/runner/work/NetOwl-automap/NetOwl-automap/LICENSE`.
